@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المهام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 قائمة المهام</h1>
+        
+        <div class="stats">
+            <span>الكل: <strong id="totalTasks">0</strong></span>
+            <span>مكتمل: <strong id="completedTasks">0</strong></span>
+        </div>
+        
+        <div class="bulk-add">
+            <textarea id="bulkInput" placeholder="أضف عدة مهام (كل مهمة في سطر)&#10;مثال:&#10;تعلم HTML&#10;تعلم CSS&#10;تعلم JavaScript"></textarea>
+            <button id="bulkAddBtn">➕ إضافة الكل</button>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="أضف مهمة جديدة...">
+            <button id="addBtn">إضافة</button>
+            <button id="clearBtn">🗑️ حذف الكل</button>
+        </div>
+        
+        <ul id="taskList"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
